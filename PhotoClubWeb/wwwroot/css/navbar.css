@@ -1,19 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap");
-
-$font-color: #616161;
-$accent-color: #70A4A8;
-$font-size: 20px;
-
 body {
   font-family: "Noto Sans JP", serif;
   margin: 0;
   padding: 0;
-  color: $font-color;
-  font-size: $font-size;
+  color: #616161;
+  font-size: 20px;
   overflow-x: hidden;
 }
 
-button, input[type="submit"], input[type="reset"] {
+button, input[type=submit], input[type=reset] {
   background: none;
   color: inherit;
   border: solid;
@@ -35,7 +30,7 @@ button, input[type="submit"], input[type="reset"] {
 .nav-parent {
   z-index: 9;
   position: fixed;
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100vw;
   display: flex;
   justify-content: flex-end;
@@ -51,8 +46,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 nav a {
-
-  color: $font-color;
+  color: #616161;
 }
 
 a {
@@ -73,11 +67,10 @@ nav ul li {
 
 #nav-icon {
   display: flex;
-
-  i {
-    margin-right: 0.6em;
-    font-size: 2em;
-  }
+}
+#nav-icon i {
+  margin-right: 0.6em;
+  font-size: 2em;
 }
 
 .slash {
@@ -87,15 +80,14 @@ nav ul li {
   top: -4px;
   width: 1px;
   height: 1em;
-  background: $font-color;
+  background: #616161;
   transform: skew(-45deg);
 }
 
 .nav-image {
   margin: 8px 10px 0;
-  color: $font-color;
+  color: #616161;
 }
-
 
 .fill:hover {
   color: whitesmoke !important;
@@ -104,7 +96,7 @@ nav ul li {
 .fill:before {
   content: "";
   position: absolute;
-  background: $accent-color;
+  background: #70A4A8;
   bottom: 0;
   left: 0;
   right: 0;
@@ -127,12 +119,12 @@ nav ul li {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 0; //change to 0
+  width: 0;
   position: fixed;
   z-index: 999;
   right: 0;
   top: 0;
-  background-color: rgba(112, 112, 112);
+  background-color: #707070;
   overflow-x: hidden;
   transition: 0.3s;
 }
@@ -141,91 +133,78 @@ nav ul li {
   position: absolute;
   top: 10px;
   right: 10px;
-
- 
-
   border: none;
 }
 
-#mobile-navbar {
-  
-  ul {
-    padding: 0;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  li {
-    margin: 10px 0;
-    white-space: nowrap;
-  }
-
-  a {
-    font-weight: 100;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    position: relative;
-    margin-top: 10px;
-  }
-
-  li:after {
-    content: "";
-    position: absolute;
-    width: 180px;
-    height: 1px;
-    right: 35px;
-    margin-top: 10px;
-    background-color: white;
-  }
-
-  .close-button {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-  }
+#mobile-navbar ul {
+  padding: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#mobile-navbar li {
+  margin: 10px 0;
+  white-space: nowrap;
+}
+#mobile-navbar a {
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  position: relative;
+  margin-top: 10px;
+}
+#mobile-navbar li:after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 1px;
+  right: 35px;
+  margin-top: 10px;
+  background-color: white;
+}
+#mobile-navbar .close-button {
+  position: absolute;
+  top: 20px;
+  right: 45px;
 }
 
 #mobile-navbar-icons {
-  img {
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-  }
-  
-
   display: flex;
   width: 100%;
   justify-content: center;
 }
+#mobile-navbar-icons img {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+}
 
-#mobile {
-  li {
-    margin: 4px 14px;
-  }
-  
+#mobile li {
+  margin: 4px 14px;
 }
 
 @media (max-width: 840px) {
   #desktop-navbar {
     display: none;
   }
+
   #mobile {
     margin: 4px;
   }
+
   .nav-image {
     margin: 0;
     width: 40px;
   }
-
 }
-
 @media (min-width: 841px) {
   #mobile {
     display: none;
   }
 }
+
+/*# sourceMappingURL=navbar.css.map */
