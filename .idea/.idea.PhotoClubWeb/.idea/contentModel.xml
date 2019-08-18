@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_kit.fontawesome.com_9629259715.js" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_PhotoClubWeb.1291988587.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\Falcon\.Rider2019.2\config\javascript\extLibs\http_kit.fontawesome.com_9629259715.js" t="IncludeRecursive" />
+    <e p="C:\Users\Falcon\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Falcon\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_PhotoClubWeb.-1734779500.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Falcon\Documents\Projects\web" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
       <e p="PhotoClubWeb" t="IncludeRecursive">
+        <e p="app.db" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
         <e p="Areas" t="Include">
           <e p="Identity" t="Include">
             <e p="Pages" t="Include">
@@ -13,19 +17,27 @@
             </e>
           </e>
         </e>
+        <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="HomeController.cs" t="Include" />
         </e>
         <e p="Data" t="Include">
           <e p="ApplicationDbContext.cs" t="Include" />
           <e p="Migrations" t="Include">
-            <e p="00000000000000_CreateIdentitySchema.Designer.cs" t="Include" />
             <e p="00000000000000_CreateIdentitySchema.cs" t="Include" />
+            <e p="00000000000000_CreateIdentitySchema.Designer.cs" t="Include" />
             <e p="ApplicationDbContextModelSnapshot.cs" t="Include" />
           </e>
         </e>
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="PhotoClubWeb.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="PhotoClubWeb.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
@@ -34,25 +46,16 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Views" t="Include">
-          <e p="Home" t="Include">
-            <e p="Index.cshtml" t="Include" />
-          </e>
-          <e p="Shared" t="Include">
-            <e p="Error.cshtml" t="Include" />
-            <e p="_Layout.cshtml" t="Include" />
-          </e>
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
-        </e>
-        <e p="app.db" t="Include" />
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp2.2" t="Include">
-              <e p="PhotoClubWeb.AssemblyInfo.cs" t="Include" />
-            </e>
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="test.cshtml" t="Include" />
+            <e p="test.cshtml.cs" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
           </e>
         </e>
         <e p="wwwroot" t="Include">
@@ -62,72 +65,73 @@
             <e p="main.jpg" t="Include" />
           </e>
           <e p="css" t="Include">
+            <e p="font-awesome.min.css" t="Include" />
+            <e p="fontawesome.min.css" t="Include" />
             <e p="index-page.css" t="Include" />
             <e p="index-page.css.map" t="Include" />
             <e p="index-page.scss" t="Include" />
+            <e p="lib" t="Include">
+              <e p="bootstrap" t="Include">
+                <e p="dist" t="Include">
+                  <e p="css" t="Include">
+                    <e p="bootstrap-grid.css" t="Include" />
+                    <e p="bootstrap-grid.css.map" t="Include" />
+                    <e p="bootstrap-grid.min.css" t="Include" />
+                    <e p="bootstrap-grid.min.css.map" t="Include" />
+                    <e p="bootstrap-reboot.css" t="Include" />
+                    <e p="bootstrap-reboot.css.map" t="Include" />
+                    <e p="bootstrap-reboot.min.css" t="Include" />
+                    <e p="bootstrap-reboot.min.css.map" t="Include" />
+                    <e p="bootstrap.css" t="Include" />
+                    <e p="bootstrap.css.map" t="Include" />
+                    <e p="bootstrap.min.css" t="Include" />
+                    <e p="bootstrap.min.css.map" t="Include" />
+                  </e>
+                  <e p="js" t="Include">
+                    <e p="bootstrap.bundle.js" t="Include" />
+                    <e p="bootstrap.bundle.js.map" t="Include" />
+                    <e p="bootstrap.bundle.min.js" t="Include" />
+                    <e p="bootstrap.bundle.min.js.map" t="Include" />
+                    <e p="bootstrap.js" t="Include" />
+                    <e p="bootstrap.js.map" t="Include" />
+                    <e p="bootstrap.min.js" t="Include" />
+                    <e p="bootstrap.min.js.map" t="Include" />
+                  </e>
+                </e>
+                <e p="LICENSE" t="Include" />
+              </e>
+              <e p="jquery" t="Include">
+                <e p="dist" t="Include">
+                  <e p="jquery.js" t="Include" />
+                  <e p="jquery.min.js" t="Include" />
+                  <e p="jquery.min.map" t="Include" />
+                </e>
+                <e p="LICENSE.txt" t="Include" />
+              </e>
+              <e p="jquery-validation" t="Include">
+                <e p="dist" t="Include">
+                  <e p="additional-methods.js" t="Include" />
+                  <e p="additional-methods.min.js" t="Include" />
+                  <e p="jquery.validate.js" t="Include" />
+                  <e p="jquery.validate.min.js" t="Include" />
+                </e>
+                <e p="LICENSE.md" t="Include" />
+              </e>
+              <e p="jquery-validation-unobtrusive" t="Include">
+                <e p="jquery.validate.unobtrusive.js" t="Include" />
+                <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+                <e p="LICENSE.txt" t="Include" />
+              </e>
+            </e>
             <e p="navbar.css" t="Include" />
             <e p="navbar.css.map" t="Include" />
             <e p="navbar.scss" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
-          <e p="js" t="Include" />
-          <e p="lib" t="Include">
-            <e p="bootstrap" t="Include">
-              <e p="LICENSE" t="Include" />
-              <e p="dist" t="Include">
-                <e p="css" t="Include">
-                  <e p="bootstrap-grid.css" t="Include" />
-                  <e p="bootstrap-grid.css.map" t="Include" />
-                  <e p="bootstrap-grid.min.css" t="Include" />
-                  <e p="bootstrap-grid.min.css.map" t="Include" />
-                  <e p="bootstrap-reboot.css" t="Include" />
-                  <e p="bootstrap-reboot.css.map" t="Include" />
-                  <e p="bootstrap-reboot.min.css" t="Include" />
-                  <e p="bootstrap-reboot.min.css.map" t="Include" />
-                  <e p="bootstrap.css" t="Include" />
-                  <e p="bootstrap.css.map" t="Include" />
-                  <e p="bootstrap.min.css" t="Include" />
-                  <e p="bootstrap.min.css.map" t="Include" />
-                </e>
-                <e p="js" t="Include">
-                  <e p="bootstrap.bundle.js" t="Include" />
-                  <e p="bootstrap.bundle.js.map" t="Include" />
-                  <e p="bootstrap.bundle.min.js" t="Include" />
-                  <e p="bootstrap.bundle.min.js.map" t="Include" />
-                  <e p="bootstrap.js" t="Include" />
-                  <e p="bootstrap.js.map" t="Include" />
-                  <e p="bootstrap.min.js" t="Include" />
-                  <e p="bootstrap.min.js.map" t="Include" />
-                </e>
-              </e>
-            </e>
-            <e p="jquery" t="Include">
-              <e p="LICENSE.txt" t="Include" />
-              <e p="dist" t="Include">
-                <e p="jquery.js" t="Include" />
-                <e p="jquery.min.js" t="Include" />
-                <e p="jquery.min.map" t="Include" />
-              </e>
-            </e>
-            <e p="jquery-validation" t="Include">
-              <e p="LICENSE.md" t="Include" />
-              <e p="dist" t="Include">
-                <e p="additional-methods.js" t="Include" />
-                <e p="additional-methods.min.js" t="Include" />
-                <e p="jquery.validate.js" t="Include" />
-                <e p="jquery.validate.min.js" t="Include" />
-              </e>
-            </e>
-            <e p="jquery-validation-unobtrusive" t="Include">
-              <e p="LICENSE.txt" t="Include" />
-              <e p="jquery.validate.unobtrusive.js" t="Include" />
-              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
-            </e>
-          </e>
+          <e p="javascript" t="Include" />
         </e>
       </e>
       <e p="PhotoClubWeb.sln" t="IncludeFlat" />
-      <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

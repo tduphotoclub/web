@@ -4,16 +4,16 @@
 <head>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/index-page.css">
-    <script src="https://kit.fontawesome.com/9629259715.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@ViewData["Title"] - PhotoClubWeb</title>
+    <title>@ViewData["Title"] - 二部写真部</title>
 </head>
 
 <body>
 <nav>
-    <div class="nav-parent">
+    <div class="nav-parent glass">
         <ul>
             <li>
                 <div class="hover">
@@ -53,27 +53,27 @@
                 <div class="slash"></div>
                 <div class="hover">
                     <a href="#">
-                        <i class="fab fa-instagram"></i>
+                        <img class="nav-image" src="assets/instagram.svg" alt="">
                     </a>
                 </div>
                 <div class="hover">
                     <a href="#">
-                        <i class="fab fa-twitter"></i>
+                        <img class="nav-image" src="assets/twitter.svg" alt="">
                     </a>
                 </div>
                 <div class="hover">
                     <a href="#">
-                        <i class="fab fa-github"></i>
+                        <img class="nav-image" src="assets/github.svg" alt="">
                     </a>
                 </div>
             </li>
 
         </ul>
     </div>
-    <div class="main">
-        @RenderBody()
-    </div>
 </nav>
+<div class="main-div">
+    @RenderBody()
+</div>
 </body>
 
 </html>

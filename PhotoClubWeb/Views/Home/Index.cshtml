@@ -2,80 +2,121 @@
     ViewData["Title"] = "ホーム";
 }
 
-<div id="main-img">
+<div id="main-img-div">
     <p id="main-header">
         東京電機大学二部写真部
     </p>
 </div>
 
-<section id="about">
-    <div id="about-parent" class="margin-top-bottom">
-        <div id="about-right">
-            <h1>部活について</h1>
-            <p>
-                こんにちわ！私たちは東京電機大学二部写真部です。
-                このホームページでは、部員が撮った写真や、活動報告を更新していきます。
-            </p>
-            <p class="vertical-space"></p>
-            <div>
+<div class="div-max-width">
+
+    <section id="about">
+        <div id="about-parent" class="margin-top-bottom">
+            <div id="about-left">
+                <h1>部活について</h1>
                 <p>
-                    部室 : 東京電機大学二部写真部です。
+                    こんにちは！私たちは東京電機大学二部写真部です。
+                    このホームページでは、部員が撮った写真や、活動報告を更新していきます。
+                </p>
+                <p class="vertical-space"></p>
+                <div >
+                    <p class="small-p-margin">
+                        部室 : 東京電機大学千住キャンパス3号館3階。
+                    </p>
+                    <p class="small-p-margin">
+                        部員：50名
+                    </p>
+                    <p class="small-p-margin">
+                        主な活動として、1ヶ月1回の撮影会。
+                    </p>
+                    <p class="small-p-margin">
+                        夏休みは、合宿を行います。
+                    </p>
+                    <p class="small-p-margin">
+                        毎年、学園祭(旭際)では、中間部写真部さんと合同で展示会を行っています。
+                    </p>
+                </div>
+            </div>
+
+            <div id="about-right">
+                <img src="assets/about-camera.png" alt="picture of a film camera" id="camera-img">
+                <p>
+                    写真部はいつでも部員募集中です!
                 </p>
                 <p>
-                    部員：50名
+                    カメラを持っていなくても、貸し出し用のカメラを持って、撮影してみよう!!
                 </p>
-                <p>
-                    主な活動として、1ヶ月1回の撮影会。
-                </p>
-                <p>
-                    夏休みは、合宿を行います。
-                </p>
-                <p>
-                    毎年、学園祭(旭際)では、中間部写真部さんと合同で展示会を行っていなす。
-                </p>
+
             </div>
         </div>
+    </section>
 
-        <div id="about-left">
-            <img src="assets/about-camera.png" alt="picture of a film camera" id="camera-img">
-            <p>
-                写真部はいつでも部員募集中です!
-            </p>
-            <p>
-                カメラを持っていなくても、貸し出し用のカメラを持って、撮影してみよう!!
-            </p>
+    <section id="gallery">
+        <div id="gallery-parent" class="margin-top-bottom">
+            <div id="gallery-left">
+                <div class="image">
+                    <img src="assets/grid.jpg" alt="">
+                    <img src="assets/grid.jpg" alt="">
+                    <img src="assets/grid.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="assets/grid.jpg" alt="">
+                    <img src="assets/grid.jpg" alt="">
+                    <img src="assets/grid.jpg" alt="">
+                </div>
+                <div class="image">
+                    <img src="assets/grid.jpg" alt="">
+                    <img src="assets/grid.jpg" alt="">
+                    <img src="assets/grid.jpg" alt="">
+                </div>
+            </div>
 
+            <div id="gallery-right">
+                <h1>ギャラリー</h1>
+                <p>
+                    サークルのメンバーが投稿した写真です。
+                </p>
+                <button id="gallery-button" class="fill">もっと見る ></button>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<section id="latest-updates">
+    <div id="latest-updates-parent">
+        <div id="articles">
+            <div class="article">
+                <img src="assets/grid.jpg" alt="">
+                <div class="article-info">
+                    <h3 class="article-title">8月撮影会</h3>
+                    <p class="article-summary">八月の撮影会について</p>
+                    <a href="#" >more</a>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="assets/grid.jpg" alt="">
+                <div class="article-info">
+                    <h3 class="article-title">8月撮影会</h3>
+                    <p class="article-summary">八月の撮影会について</p>
+                    <a href="#" >more</a>
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="assets/grid.jpg" alt="">
+                <div class="article-info">
+                    <h3 class="article-title">8月撮影会</h3>
+                    <p class="article-summary">八月の撮影会について</p>
+                    <a href="#" >more</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="gallery">
-    <div id="gallery-parent" class="margin-top-bottom">
-        <div id="gallery-left">
-            <div class="image">
-                <img src="assets/grid.jpg" alt="">
-                <img src="assets/grid.jpg" alt="">
-                <img src="assets/grid.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="assets/grid.jpg" alt="">
-                <img src="assets/grid.jpg" alt="">
-                <img src="assets/grid.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="assets/grid.jpg" alt="">
-                <img src="assets/grid.jpg" alt="">
-                <img src="assets/grid.jpg" alt="">
-            </div>
-        </div>
-        
-        <div id="gallery-right">
-            <h1>ギャラリー</h1>
-            <p>
-                サークルのメンバーが投稿した写真です。
-            </p>
-            <button>もっと見る ></button>
-        </div>
-        
-    </div>
+<section>
+    <div class="margin-top-bottom"></div>
 </section>
