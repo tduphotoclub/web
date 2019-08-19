@@ -2,7 +2,7 @@
 
 $font-color: #616161;
 $accent-color: #70A4A8;
-$font-size: 20px;
+$font-size: 16px;
 
 body {
   font-family: "Noto Sans JP", serif;
@@ -35,7 +35,7 @@ button, input[type="submit"], input[type="reset"] {
 .nav-parent {
   z-index: 9;
   position: fixed;
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100vw;
   display: flex;
   justify-content: flex-end;
@@ -56,7 +56,7 @@ nav a {
 }
 
 a {
-  font-size: 1em;
+  font-size: $font-size;
   text-decoration: none;
 }
 
@@ -64,6 +64,7 @@ ul {
   display: flex;
   text-decoration: none;
   list-style: none;
+  align-items: center;
 }
 
 nav ul li {
@@ -91,6 +92,10 @@ nav ul li {
   transform: skew(-45deg);
 }
 
+.last_slash {
+  top: 3px;
+}
+
 .nav-image {
   margin: 8px 10px 0;
   color: $font-color;
@@ -110,7 +115,7 @@ nav ul li {
   right: 0;
   top: 100%;
   z-index: -1;
-  -webkit-transition: top 0.1s ease-in;
+  transition: top 0.1s ease-in;
 }
 
 .fill:hover:before {
@@ -132,7 +137,7 @@ nav ul li {
   z-index: 999;
   right: 0;
   top: 0;
-  background-color: rgba(112, 112, 112);
+  background-color: rgb(112, 112, 112);
   overflow-x: hidden;
   transition: 0.3s;
 }

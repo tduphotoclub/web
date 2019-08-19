@@ -15,7 +15,7 @@ $font-size: 20px;
 
 section p {
   font-weight: 100;
-  font-size: 1em;
+  font-size: 16px;
 }
 
 #main-img-div {
@@ -65,7 +65,7 @@ section p {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 35px;  
   margin-top: 0;
 }
 
@@ -132,7 +132,7 @@ h1 {
 
 #latest-updates-parent:before {
   content: "更新情報";
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   top: -30px;
   left: 10vw;
